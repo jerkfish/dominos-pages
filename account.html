@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Account - FornoExpress Pizza</title>
+    <title>My Account - PizzaPals</title>
     <link rel="stylesheet" href="account.css">
 </head>
 <body>
     <header>
         <div class="header-container">
-            <div class="logo">FornoExpress <span>PIZZA</span></div>
+            <div class="logo">PizzaPals <span>PIZZA</span></div>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="main.html">Home</a></li>
                     <li><a href="product.html">Menu</a></li>
                     <li><a href="deals.html">Deals</a></li>
                     <li><a href="storelocator.html">Store Locator</a></li>
@@ -74,7 +74,7 @@
                         
                         <div class="form-group">
                             <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" class="form-control" value="(555) 123-4567">
+                            <input type="tel" id="phone" class="form-control" value="012-3456789">
                         </div>
                         
                         <div class="form-group">
@@ -100,9 +100,9 @@
                                 <div class="address-badge">Primary</div>
                             </div>
                             <div class="address-details">
-                                <p>123 Main Street</p>
+                                <p>123 Jalan Kesum</p>
                                 <p>Apartment 4B</p>
-                                <p>Anytown, USA 12345</p>
+                                <p>40000 Shah Alam, Selangor</p>
                             </div>
                             <div class="address-actions">
                                 <span class="action-icon">✏️</span>
@@ -115,9 +115,9 @@
                                 <div class="address-title">Work</div>
                             </div>
                             <div class="address-details">
-                                <p>456 Business Avenue</p>
-                                <p>Suite 300</p>
-                                <p>Anytown, USA 12345</p>
+                                <p>123 Jalan Kesum</p>
+                                <p>Apartment OPAL</p>
+                                <p>40000 Shah Alam, Selangor</p>
                             </div>
                             <div class="address-actions">
                                 <span class="action-icon">✏️</span>
@@ -218,7 +218,7 @@
                 
                 <!-- Rewards Section -->
                 <div class="content-section" id="rewards-section">
-                    <h2 class="section-title">FornoExpress REWARDS</h2>
+                    <h2 class="section-title">PizzaPals REWARDS</h2>
                     
                     <div class="rewards-card">
                         <div class="rewards-header">
@@ -235,7 +235,7 @@
                             <span>350 points to next reward</span>
                         </div>
                         
-                        <p>Earn 1 point for every $1 spent. Redeem 500 points for a free medium pizza!</p>
+                        <p>Earn 1 point for every RM20 spent. Redeem 500 points for a free medium pizza!</p>
                         
                         <div class="rewards-actions">
                             <button class="btn btn-light">View Rewards</button>
@@ -251,21 +251,21 @@
                                     <h4>Order #DOM-2023-0876</h4>
                                     <div class="order-date">November 15, 2023</div>
                                 </div>
-                                <div class="order-total">$25.84</div>
+                                <div class="order-total">RM25.84</div>
                             </li>
                             <li class="order-item">
                                 <div class="order-info">
                                     <h4>Order #DOM-2023-0654</h4>
                                     <div class="order-date">October 28, 2023</div>
                                 </div>
-                                <div class="order-total">$33.92</div>
+                                <div class="order-total">RM33.92</div>
                             </li>
                             <li class="order-item">
                                 <div class="order-info">
                                     <h4>Order #DOM-2023-0543</h4>
                                     <div class="order-date">October 12, 2023</div>
                                 </div>
-                                <div class="order-total">$23.68</div>
+                                <div class="order-total">RM43.68</div>
                             </li>
                         </ul>
                         <a href="order_history.html" class="btn btn-secondary" style="margin-top: 15px; display: inline-block;">View All Orders</a>
@@ -331,11 +331,10 @@
                 </ul>
             </div>
             <div class="footer-column">
-                <h3>ABOUT FornoExpress</h3>
+                <h3>ABOUT PizzaPals</h3>
                 <ul>
                     <li><a href="about.html">Our Story</a></li>
-                    <li><a href="franchise.html">Franchise Info</a></li>
-                    <li><a href="index.html">Nutrition Info</a></li>
+                    <li><a href="nutrition.html">Nutrition Info</a></li>
                 </ul>
             </div>
             <div class="footer-column">
@@ -343,12 +342,12 @@
                 <ul>
                     <li><a href="contact.html">Customer Service</a></li>
                     <li><a href="contact.html">Store Feedback</a></li>
-                    <li><a href="storelocator.html">Store Locator</a></li>
+                    <li><a href="store.html">Store Locator</a></li>
                 </ul>
             </div>
         </div>
         <div class="copyright">
-            &copy; 2025 FornoExpress Pizza LLC. All rights reserved.
+            &copy; 2025 PizzaPals Sdn Bhd. All rights reserved.
         </div>
     </footer>
 
@@ -358,27 +357,27 @@
             firstName: "John",
             lastName: "Doe",
             email: "john.doe@example.com",
-            phone: "(555) 123-4567",
+            phone: "012-3456789",
             birthday: "1990-05-15",
             addresses: [
                 {
                     id: 1,
                     title: "Home",
-                    street: "123 Main Street",
+                    street: "123 Jalan Kesum",
                     apartment: "Apartment 4B",
-                    city: "Anytown",
-                    state: "USA",
-                    zip: "12345",
+                    city: "Shah Alam",
+                    state: "Selangor",
+                    zip: "40000",
                     primary: true
                 },
                 {
                     id: 2,
                     title: "Work",
-                    street: "456 Business Avenue",
-                    apartment: "Suite 300",
-                    city: "Anytown",
-                    state: "USA",
-                    zip: "12345",
+                    street: "123 Jalan Kesum",
+                    apartment: "Apartment OPAL",
+                    city: "Shah Alam",
+                    state: "Selangor",
+                    zip: "40000",
                     primary: false
                 }
             ],

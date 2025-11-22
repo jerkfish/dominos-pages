@@ -1,47 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Cart - FornoExpress Pizza</title>
+    <title>Your Cart - PizzaPals</title>
     <link rel="stylesheet" href="cart.css">
 </head>
-
 <body>
     <header>
-        <div class="header-container">
-            <div class="logo">Forno Express <span>PIZZA</span></div>
+                <div class="header-container">
+            <div class="logo">PizzaPals <span>PIZZA</span></div>
             <nav>
                 <ul>
                     <li><a href="main.html">Home</a></li>
                     <li><a href="product.html">Menu</a></li>
                     <li><a href="deals.html">Deals</a></li>
                     <li><a href="store.html">Store Locator</a></li>
-
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
             <div class="user-actions">
                 <a href="login.html">Sign In</a>
                 <a href="cart.html">Cart (0)</a>
-            </div>
-        </div>
+            </div>        </div>
     </header>
-
+    
     <div class="container">
         <h1 class="page-title">YOUR CART</h1>
         <p class="page-subtitle">Review your order before checkout</p>
-
+        
         <div class="cart-layout">
             <!-- Cart Items -->
             <div class="cart-items">
                 <h2 class="section-title">ORDER ITEMS</h2>
-
+                
                 <div id="cart-items-container">
                     <!-- Cart items will be populated by JavaScript -->
                 </div>
-
+                
                 <div id="empty-cart-message" class="empty-cart" style="display: none;">
                     <div class="empty-cart-icon">🛒</div>
                     <h3>Your cart is empty</h3>
@@ -49,42 +45,42 @@
                     <a href="product.html" class="shop-now-btn">SHOP NOW</a>
                 </div>
             </div>
-
+            
             <!-- Order Summary -->
             <div class="order-summary">
                 <h2 class="section-title">ORDER SUMMARY</h2>
-
+                
                 <div class="delivery-info">
                     <div class="delivery-title">Delivery to:</div>
-                    <div>123 Main Street, Anytown, USA 12345</div>
+                    <div>14, Jalan Ilmu 40300 Seksyen 7, Shah Alam, Selangor</div>
                     <a href="#" class="change-delivery">Change</a>
                 </div>
-
+                
                 <div class="summary-row">
                     <span>Subtotal (3 items):</span>
-                    <span id="subtotal">$32.97</span>
+                    <span id="subtotal">RM32.97</span>
                 </div>
-
+                
                 <div class="summary-row">
                     <span>Delivery Fee:</span>
-                    <span id="delivery-fee">$2.99</span>
+                    <span id="delivery-fee">RM5.00</span>
                 </div>
-
+                
                 <div class="summary-row">
                     <span>Tax:</span>
-                    <span id="tax">$2.80</span>
+                    <span id="tax">RM3.80</span>
                 </div>
-
+                
                 <div class="summary-row">
                     <span>Discount:</span>
-                    <span id="discount">-$0.00</span>
+                    <span id="discount">-RM0.00</span>
                 </div>
-
+                
                 <div class="summary-row summary-total">
                     <span>Total:</span>
-                    <span id="total">$38.76</span>
+                    <span id="total">37.97</span>
                 </div>
-
+                
                 <div class="promo-code">
                     <div class="delivery-title">Promo Code</div>
                     <div class="promo-input">
@@ -92,11 +88,11 @@
                         <button class="apply-btn" id="apply-promo">APPLY</button>
                     </div>
                 </div>
-
+                
                 <button class="checkout-btn" id="checkout-btn">PROCEED TO CHECKOUT</button>
             </div>
         </div>
-
+        
         <!-- Suggested Items -->
         <div class="suggested-items">
             <h2 class="section-title">YOU MIGHT ALSO LIKE</h2>
@@ -105,7 +101,7 @@
             </div>
         </div>
     </div>
-
+    
     <footer>
         <div class="footer-container">
             <div class="footer-column">
@@ -128,11 +124,10 @@
                 </ul>
             </div>
             <div class="footer-column">
-                <h3>ABOUT FornoExpress'S</h3>
+                <h3>ABOUT PizzaPals</h3>
                 <ul>
                     <li><a href="about.html">Our Story</a></li>
-                    <li><a href="franchise.html">Franchise Info</a></li>
-                    <li><a href="index.html">Nutrition Info</a></li>
+                    <li><a href="nutrition.html">Nutrition Info</a></li>
                 </ul>
             </div>
             <div class="footer-column">
@@ -140,12 +135,12 @@
                 <ul>
                     <li><a href="contact.html">Customer Service</a></li>
                     <li><a href="contact.html">Store Feedback</a></li>
-                    <li><a href="storelocator.html">Store Locator</a></li>
+                    <li><a href="store.html">Store Locator</a></li>
                 </ul>
             </div>
         </div>
         <div class="copyright">
-            &copy; 2025 FornoExpress's Pizza LLC. All rights reserved.
+            &copy; 2025 PizzaPals Sdn Bhd. All rights reserved.
         </div>
     </footer>
 
@@ -158,31 +153,31 @@
                     name: "Pepperoni Pizza",
                     description: "Classic pepperoni with mozzarella cheese",
                     customization: "Medium, Hand Tossed Crust",
-                    price: 12.99,
+                    price: 24.99,
                     quantity: 1,
-                    image: "https://via.placeholder.com/100x100?text=Pepperoni"
+                    image: "images/pepperoni.jpg"
                 },
                 {
                     id: 16,
                     name: "Breadsticks",
-                    description: "8 piece oven-baked breadsticks",
-                    customization: "With marinara sauce",
-                    price: 5.99,
+                    description: "8 piece oven-baked garlic breadsticks",
+                    customization: "With white sauce",
+                    price: 8.99,
                     quantity: 1,
-                    image: "https://via.placeholder.com/100x100?text=Breadsticks"
+                    image: "images/breadstick.jpg"
                 },
                 {
                     id: 22,
                     name: "2-Liter Soda",
                     description: "Your choice of Coca-Cola",
                     customization: "Coca-Cola",
-                    price: 2.99,
+                    price: 8.99,
                     quantity: 1,
-                    image: "https://via.placeholder.com/100x100?text=Soda"
+                    image: "images/pepsi.jpg"
                 }
             ],
             subtotal: 0,
-            deliveryFee: 2.99,
+            deliveryFee: 5.00,
             tax: 0,
             discount: 0,
             total: 0
@@ -194,25 +189,25 @@
                 id: 19,
                 name: "Chocolate Lava Cake",
                 price: 4.99,
-                image: "https://via.placeholder.com/200x120?text=Chocolate+Cake"
+                image: "images/choclavacake.jpg"
             },
             {
                 id: 17,
                 name: "Cheesy Bread",
                 price: 6.99,
-                image: "https://via.placeholder.com/200x120?text=Cheesy+Bread"
+                image: "images/cheesebread.jpg"
             },
             {
                 id: 7,
                 name: "Chicken Wings",
                 price: 9.99,
-                image: "https://via.placeholder.com/200x120?text=Chicken+Wings"
+                image: "images/chickenwings.jpg"
             },
             {
                 id: 10,
                 name: "Chicken Alfredo",
                 price: 10.99,
-                image: "https://via.placeholder.com/200x120?text=Chicken+Alfredo"
+                image: "images/chickenalfredo.jpg"
             }
         ];
 
@@ -221,18 +216,18 @@
             cart.subtotal = cart.items.reduce((sum, item) => sum + (item.price * item.quantity), 0);
             cart.tax = cart.subtotal * 0.085; // 8.5% tax
             cart.total = cart.subtotal + cart.deliveryFee + cart.tax - cart.discount;
-
+            
             // Update UI
-            document.getElementById('subtotal').textContent = `$${cart.subtotal.toFixed(2)}`;
-            document.getElementById('delivery-fee').textContent = `$${cart.deliveryFee.toFixed(2)}`;
-            document.getElementById('tax').textContent = `$${cart.tax.toFixed(2)}`;
-            document.getElementById('discount').textContent = `-$${cart.discount.toFixed(2)}`;
-            document.getElementById('total').textContent = `$${cart.total.toFixed(2)}`;
-
+            document.getElementById('subtotal').textContent = `RM${cart.subtotal.toFixed(2)}`;
+            document.getElementById('delivery-fee').textContent = `RM${cart.deliveryFee.toFixed(2)}`;
+            document.getElementById('tax').textContent = `RM${cart.tax.toFixed(2)}`;
+            document.getElementById('discount').textContent = `-RM${cart.discount.toFixed(2)}`;
+            document.getElementById('total').textContent = `RM${cart.total.toFixed(2)}`;
+            
             // Update cart count in header
             const totalItems = cart.items.reduce((sum, item) => sum + item.quantity, 0);
             document.getElementById('header-cart-count').textContent = totalItems;
-
+            
             // Enable/disable checkout button
             document.getElementById('checkout-btn').disabled = cart.items.length === 0;
         }
@@ -241,16 +236,16 @@
         function renderCartItems() {
             const container = document.getElementById('cart-items-container');
             const emptyMessage = document.getElementById('empty-cart-message');
-
+            
             if (cart.items.length === 0) {
                 container.innerHTML = '';
                 emptyMessage.style.display = 'block';
                 return;
             }
-
+            
             emptyMessage.style.display = 'none';
             container.innerHTML = '';
-
+            
             cart.items.forEach(item => {
                 const cartItem = document.createElement('div');
                 cartItem.className = 'cart-item';
@@ -269,7 +264,7 @@
                             <button class="remove-btn" data-id="${item.id}">Remove</button>
                         </div>
                     </div>
-                    <div class="item-price">$${(item.price * item.quantity).toFixed(2)}</div>
+                    <div class="item-price">RM${(item.price * item.quantity).toFixed(2)}</div>
                 `;
                 container.appendChild(cartItem);
             });
@@ -279,14 +274,14 @@
         function renderSuggestedItems() {
             const container = document.getElementById('suggested-items-container');
             container.innerHTML = '';
-
+            
             suggestedItems.forEach(item => {
                 const suggestedItem = document.createElement('div');
                 suggestedItem.className = 'suggested-item';
                 suggestedItem.innerHTML = `
                     <img src="${item.image}" alt="${item.name}" class="suggested-image">
                     <div class="suggested-name">${item.name}</div>
-                    <div class="suggested-price">$${item.price.toFixed(2)}</div>
+                    <div class="suggested-price">${item.price.toFixed(2)}</div>
                     <button class="add-suggested-btn" data-id="${item.id}">ADD TO CART</button>
                 `;
                 container.appendChild(suggestedItem);
@@ -331,7 +326,7 @@
                     });
                 }
                 updateCart();
-                alert(`${suggestedItem.name} added to cart!`);
+                alert(`RM{suggestedItem.name} added to cart!`);
             }
         }
 
@@ -343,7 +338,7 @@
                 "FornoExpressS20": 20,
                 "FREEDELIVERY": 2.99
             };
-
+            
             if (promoCodes[code]) {
                 if (code === "FREEDELIVERY") {
                     cart.discount += cart.deliveryFee;
@@ -377,11 +372,11 @@
         }
 
         // Event listeners
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function() {
             initializeCart();
-
+            
             // Quantity button events
-            document.addEventListener('click', function (e) {
+            document.addEventListener('click', function(e) {
                 if (e.target.classList.contains('quantity-btn')) {
                     const itemId = parseInt(e.target.getAttribute('data-id'));
                     if (e.target.classList.contains('plus')) {
@@ -390,22 +385,22 @@
                         handleQuantityChange(itemId, -1);
                     }
                 }
-
+                
                 // Remove button events
                 if (e.target.classList.contains('remove-btn')) {
                     const itemId = parseInt(e.target.getAttribute('data-id'));
                     removeItem(itemId);
                 }
-
+                
                 // Suggested item button events
                 if (e.target.classList.contains('add-suggested-btn')) {
                     const itemId = parseInt(e.target.getAttribute('data-id'));
                     addSuggestedItem(itemId);
                 }
             });
-
+            
             // Apply promo code
-            document.getElementById('apply-promo').addEventListener('click', function () {
+            document.getElementById('apply-promo').addEventListener('click', function() {
                 const promoCode = document.getElementById('promo-code-input').value.toUpperCase();
                 if (promoCode) {
                     applyPromoCode(promoCode);
@@ -414,9 +409,9 @@
                     alert('Please enter a promo code');
                 }
             });
-
+            
             // Checkout button
-            document.getElementById('checkout-btn').addEventListener('click', function () {
+            document.getElementById('checkout-btn').addEventListener('click', function() {
                 if (cart.items.length > 0) {
                     alert('Proceeding to checkout!');
                     // In a real application, this would redirect to checkout page
@@ -425,5 +420,4 @@
         });
     </script>
 </body>
-
 </html>
